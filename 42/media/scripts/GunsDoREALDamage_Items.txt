@@ -1,0 +1,39 @@
+module Base
+{
+
+	item SuicideNote
+		{
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Suicide Note,
+        IconsForTexture	=	SuicideNote1;SuicideNote2,
+		StressChange	=	+15,
+		UnhappyChange	=	+20,
+        /*CanBeWrite  =   true,
+        PageToWrite =   1,*/
+        StaticModelsByIndex = Note1;Note2,
+        WorldStaticModelsByIndex = Note1;Note2,
+		ReadType = photo,
+		Tags = Uninteresting,
+		/*OnCreate = SpecialLootSpawns.OnCreateNote,*/
+		}
+
+	
+	item SuicideLetterHandwritten
+		{
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Letter to a Loved One,
+        IconsForTexture	=	SuicideLetterHandwritten1;SuicideLetterHandwritten2,
+		OnCreate = SpecialLootSpawns.OnCreateLetterHandwritten,
+        z
+		StaticModelsByIndex = LetterHandwritten1;LetterHandwritten2,
+		WorldStaticModelsByIndex = LetterHandwritten1;LetterHandwritten2,
+		ReadType = newspaper,
+		Tags = Uninteresting,
+       /* CanBeWrite  =   true,
+        PageToWrite =   1,*/
+		}
+}
